@@ -1,4 +1,4 @@
-#import<stdio.h>
+#include<stdio.h>
 
 main(){
 	int num = 0;
