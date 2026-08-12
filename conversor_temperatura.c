@@ -1,6 +1,5 @@
 #include<stdio.h>
-
-// TODO: Arrumar a compilaçao pois ainda nao esta compilando
+#include <stdlib.h>
 
 int escolha_conversao() {
 
@@ -10,40 +9,40 @@ int escolha_conversao() {
     printf("[2] Conversao de Celcius para Fahrenheit\n");
     printf("[3] Sair do programa\n");
 
-    scanf("%i", &choice);
+    scanf("%1i", &choice);
 
     return choice;
 
 }
 
+float calcula_fahrenheit_de_celcius(float temperatura_celcius) {
+    return (9 * temperatura_celcius + 160) / 5;
+}
+
 void converte_Fahrenheit_Celcius() {
 
-    int temperatura_celcius;
+    float temperatura_celcius;
 
-    printf("Digite a temperatura em Celcius");
-    scanf("%i", &temperatura_celcius);
+    printf("Digite a temperatura em Celcius: ");
+    scanf("%f", &temperatura_celcius);
 
-    printf("A temperatura em Fahrenheit é: %f", calcula_fahrenheit_de_celcius(temperatura_celcius));
+    printf("A temperatura em Fahrenheit é: %.2f\n", calcula_fahrenheit_de_celcius(temperatura_celcius));
 
+}
+
+float calcula_celcius_de_fahrenheit(float temperatura_fahrenheit) {
+    return (temperatura_fahrenheit - 32) * (5 / 9);
 }
 
 void converte_Celcius_Fahrenheit() {
 
-    int temperatura_fahrenheit;
+    float temperatura_fahrenheit;
 
-    printf("Digite a temperatura em Fahrenheit");
-    scanf("%i", &temperatura_fahrenheit);
+    printf("Digite a temperatura em Fahrenheit: ");
+    scanf("%f", &temperatura_fahrenheit);
 
-    printf("A temperatura em Celcius é: %f", calcula_celcius_de_fahrenheit(temperatura_fahrenheit));
+    printf("A temperatura em Celcius é: %.2f\n", calcula_celcius_de_fahrenheit(temperatura_fahrenheit));
 
-}
-
-float calcula_fahrenheit_de_celcius(temperatura_celcius) {
-    return (9 * temperatura_celcius + 160) / 5;
-}
-
-float calcula_celcius_de_fahrenheit(temperatura_fahrenheit) {
-    return (temperatura_fahrenheit - 32) * (5 / 9);
 }
 
 int main() {
@@ -63,7 +62,7 @@ int main() {
                 converte_Celcius_Fahrenheit();
 
             default:
-                break;
+                exit(0);
         }
 
     }
