@@ -1,7 +1,7 @@
 #include<stdio.h>
 
-#define PORCENTAGEM_COBRE 0.70
-#define PORCENTAGEM_ZINCO 0.30
+#define PORCENTAGEM_COBRE 0.50
+#define PORCENTAGEM_ZINCO 0.50
 
 int main() {
 
