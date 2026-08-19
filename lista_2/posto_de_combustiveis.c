@@ -1,10 +1,9 @@
 #include<stdio.h>
-
-// TODO: TERMINAR A ATIVIDADE
+#include <stdlib.h>
 
 #define PRECO_ATUAL_GASOLINA 6.50
-#define PRECO_ATUAL_DISEL    
-#define PRECO_ATUAL_ALCOOL
+#define PRECO_ATUAL_DISEL    6.50
+#define PRECO_ATUAL_ALCOOL   6.50
 
 int seleciona_conversao() {
     int selecao;
@@ -19,53 +18,55 @@ int seleciona_conversao() {
     return selecao;
 }
 
-
 void abastece_gasolina(){
     int quantidade_gasolina;
-    
+
     printf("Digite a quantidade em litros a ser abastecida de gasolina: ");
     scanf("%i", &quantidade_gasolina);
-    printf("O total do abastecimento deu %i" , quantidade_gasolina*PRECO_ATUAL_GASOLINA)
+    printf("O total do abastecimento deu %f" , quantidade_gasolina*PRECO_ATUAL_GASOLINA);
 }
 
 void abastece_disel(){
     int quantidade_disel;
-    
+
     printf("Digite a quantidade em litros a ser abastecida de disel: ");
     scanf("%i", &quantidade_disel);
-    printf("O total do abastecimento deu %i" , quantidade_disel*PRECO_ATUAL_DISEL)
+    printf("O total do abastecimento deu %f" , quantidade_disel*PRECO_ATUAL_DISEL);
 }
 
 void abastece_alcool(){
     int quantidade_alcool;
-    
+
     printf("Digite a quantidade em litros a ser abastecida de alcool: ");
     scanf("%i", &quantidade_alcool);
-    printf("O total do abastecimento deu %i" , quantidade_alcool*PRECO_ATUAL_ALCOOL)
+    printf("O total do abastecimento deu %f" , quantidade_alcool*PRECO_ATUAL_ALCOOL);
 }
 
 
-void main(){
+int main(){
 
-    int selecao
+    int selecao;
 
     while(1) {
-        selecao = seleciona_conversao()
+        selecao = seleciona_conversao();
 
-        switch (choice)
+        switch (selecao)
         {
             case 1:
                 abastece_gasolina();
+                break;
 
             case 2:
                 abastece_disel();
+                break;
 
             case 3:
                 abastece_alcool();
-            
+                break;
+
             default:
                 exit(0);
-    
+
         }
 
     }
