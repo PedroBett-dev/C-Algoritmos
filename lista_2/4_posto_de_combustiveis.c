@@ -10,20 +10,20 @@
 #define PRECO_ATUAL_DISEL    5.80
 #define PRECO_ATUAL_ALCOOL   4.50
 
-int seleciona_conversao() {
-    int selecao;
+char seleciona_conversao() {
+    char selecao;
 
-    printf("[1] Abastecer usado Gasolina\n"         );
-    printf("[2] Abastecer usado Disel\n"            );
-    printf("[3] Abastecer usado Alcool\n"           );
-    printf("[4] Obrigado, nao vou abastecer hoje\n" );
+    printf("[G] Abastecer usado Gasolina\n"         );
+    printf("[D] Abastecer usado Disel\n"            );
+    printf("[A] Abastecer usado Alcool\n"           );
+    printf("[ ] Obrigado, nao vou abastecer hoje\n" );
 
-    scanf("%1i", &selecao);
+    scanf("%c", &selecao);
 
     return selecao;
 }
 
-void abastece_gasolina(){
+int abastece_gasolina(){
     int quantidade_gasolina;
 
     printf("Digite a quantidade em litros a ser abastecida de gasolina: ");
@@ -33,7 +33,7 @@ void abastece_gasolina(){
     return 0;
 }
 
-void abastece_disel(){
+int abastece_disel(){
     int quantidade_disel;
 
     printf("Digite a quantidade em litros a ser abastecida de disel: ");
@@ -43,7 +43,7 @@ void abastece_disel(){
     return 0;
 }
 
-void abastece_alcool(){
+int abastece_alcool(){
     int quantidade_alcool;
 
     printf("Digite a quantidade em litros a ser abastecida de alcool: ");
@@ -56,22 +56,24 @@ void abastece_alcool(){
 
 int main(){
 
-    int selecao;
-
     while(1) {
-        selecao = seleciona_conversao();
 
-        switch (selecao)
+        char escolha = seleciona_conversao();
+
+        switch(escolha)
         {
-            case 1:
+            case 'G':
+            case 'g':
                 abastece_gasolina();
                 break;
 
-            case 2:
+            case 'D':
+            case 'd':
                 abastece_disel();
                 break;
 
-            case 3:
+            case 'A':
+            case 'a':
                 abastece_alcool();
                 break;
 
