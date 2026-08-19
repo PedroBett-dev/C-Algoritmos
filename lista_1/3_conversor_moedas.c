@@ -1,5 +1,8 @@
 #include<stdio.h>
 
+//3) Faça um programa em linguagem C que realize a conversão de um valor em dólares para real.
+//   O programa recebe o valor em dólares e a cotação, depois calcula o valor em reais
+
 main() {
     int cotacao_atual;
     int moedas_para_conversao;

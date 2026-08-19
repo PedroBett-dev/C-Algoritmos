@@ -1,6 +1,9 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+//7)Faça um programa que deve calcular o total da compra de um produto recebendo como informações, o
+//   valor e a quantidade deste produto. Em seguida, será informado o valor pago e o sistema deve calcular e mostrar o troco.
+
 void main() {
 
     int quantidade_produto;
@@ -32,6 +35,6 @@ void main() {
 
     }
 
-    
+
 
 }

@@ -1,6 +1,12 @@
 #include<stdio.h>
 #include <stdlib.h>
 
+//8)Faça um programa que converta a temperatura de graus Celsius para graus Fahrenheit. A fórmula de conversão é: F = (9 * C + 160) / 5,
+//  onde F é a temperatura em Fahrenheit e C é a temperatura em Celsius.
+
+//9)Ler uma temperatura em graus Fahrenheit e apresentá-la convertida em graus Celsius. A fórmula de conversão é: C = (F – 32) * (5 / 9),
+//  onde F é a temperatura em Fahrenheit e C é a temperatura em Celsius.
+
 int escolha_conversao() {
 
     int choice;
@@ -66,7 +72,7 @@ int main() {
         }
 
     }
-    
+
 
 }
 

@@ -1,5 +1,8 @@
 #include<stdio.h>
 
+//10)Ler dois valores para as variáveis A e B, efetuar a troca dos valores de forma que a variável A passe a possuir
+//   o valor da variável B e que a variável B passe a possuir o valor da variável A. Apresentar no final os valores trocados.
+
 int main() {
 
     int var_a;

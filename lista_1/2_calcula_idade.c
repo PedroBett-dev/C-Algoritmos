@@ -1,5 +1,8 @@
 #include<stdio.h>
 
+//2) Faça um programa em linguagem C que calcule a idade de uma pessoa,
+//   lendo o ano atual e o ano de nascimento, apresentar a idade da pessoa calculada.
+
 main(){
     int ano_nascimento;
     int ano_atual;
