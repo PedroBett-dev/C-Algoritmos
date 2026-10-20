@@ -1,2 +1,9 @@
 *.exe
+*.out
+a.exe
+.vscode/
+teste
+teste.*
+*teste*
+*test*
 .DS_Store
