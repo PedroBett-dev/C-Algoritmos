@@ -1,7 +1,7 @@
-// Função: Iniciar programa de cadastro de produtos 
+// Função: Iniciar programa de cadastro de produtos
 
 #include<stdio.h>
-#include"headers\menu_principal.h"
+#include"headers/menu_principal.h"
 
 int main(){
 

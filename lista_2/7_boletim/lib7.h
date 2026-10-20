@@ -6,7 +6,7 @@
     #define QUANTIDADE_DE_POSICOES_ARRAY 6
 
     #define POSICAO_1_PROVA         1
-    #define POSICAO_2_PROVA         2 
+    #define POSICAO_2_PROVA         2
     #define POSICAO_1_FALTA         3
     #define POSICAO_2_FALTA         4
     #define POSICAO_MEDIA_BIMESTRAL 5
@@ -20,7 +20,7 @@
     //utils
     void limpa_tela();
     int atribui_valores_array_notas(float *a, float prova_1, float prova_2, float faltas_1, float faltas_2);
-    float retorna_array_respectivo_bimestre(int bimestre);
+    float *retorna_array_respectivo_bimestre(int bimestre);
 
     //calculos
     int precisa_de_recuperacao(float *a);

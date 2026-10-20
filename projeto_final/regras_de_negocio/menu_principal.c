@@ -1,6 +1,6 @@
 // Função: Regras de negocio atreladas à Tela do menu principal do programa
 #include<stdio.h>
-#include"..\headers\menu_principal.h"
+#include"../headers/menu_principal.h"
 
 int opcao_cadastrar_produto() {
     

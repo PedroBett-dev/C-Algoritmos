@@ -3,7 +3,7 @@
 #include"lib7.h"
 
 void limpa_tela(){
-    
+
     #ifdef _WIN32
         system("cls");
     #else
@@ -22,9 +22,9 @@ int atribui_valores_array_notas(float *a, float prova_1, float prova_2, float fa
     return 0;
 }
 
-float* retorna_array_respectivo_bimestre(int bimestre){
-    
-    switch(bimestre);
+float *retorna_array_respectivo_bimestre(int bimestre){
+
+    switch(bimestre)
     {
         case 1:
             return notas_1_bim;

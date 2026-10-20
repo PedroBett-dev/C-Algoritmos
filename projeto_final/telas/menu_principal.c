@@ -1,7 +1,7 @@
 // Função: Tela do menu principal do programa
 
 #include<stdio.h>
-#include"..\headers\menu_principal.h"
+#include"../headers/menu_principal.h"
 
 int escreve_menu_principal() {
 

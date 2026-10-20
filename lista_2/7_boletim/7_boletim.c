@@ -22,12 +22,14 @@ int seleciona(int bimestre){
 
     scanf("%1i", &selecao);
 
+    return selecao;
+
 }
 
 int main() {
 
     for (int bimestre = 1; bimestre <= 4; bimestre++) {
-        
+
         int escolha = seleciona(bimestre);
 
         switch(escolha)
