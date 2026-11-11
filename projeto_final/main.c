@@ -2,6 +2,9 @@
 
 #include<stdio.h>
 #include"headers/menu_principal.h"
+#include"structs/produto.c"
+
+produto Banco[100];
 
 int main(){
 
